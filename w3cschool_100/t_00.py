@@ -1,5 +1,10 @@
 #!/usr/bin/python
-#coding=utf-8
+# coding=utf-8
+
+
+# File -> settings
+# Editor->Colors & Fonts
+# 把weak warning的effects去除勾选
 
 
 # 中文乱码的问题
@@ -9,8 +14,6 @@ import math
 
 content = dir(math)
 print content
-
-
 
 
 

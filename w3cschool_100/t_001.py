@@ -1,14 +1,35 @@
 #!/usr/bin/python
-#coding=utf-8
+# coding=utf-8
 
 
-# 中文乱码的问题
-# 以上出错信息显示了我们为指定编码，解决方法为只要在文件开头加入 # -*- coding: UTF-8 -*- 或者 #coding=utf-8 就行了。
 
-import math
+# 题目:有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
 
-content = dir(math)
-print content
+
+
+
+'''
+for i in range(1, 5):
+	for j in range(1, 5):
+		for k in range(1, 5):
+			if (i != j) and (i != k) and (j != k):
+				print i,j,k
+'''
+
+
+# scope = [1, 2, 3]
+scope = [1, 2, 3, 4]
+result = []
+
+for i in scope:
+	for j in scope:
+		for k in scope:
+			if (i != j) and (i != k) and (j != k):
+				tmpResult = str(i) + str(j) + str(k)
+				result.append(tmpResult)
+
+for tmp in result:
+	print tmp
 
 
 
